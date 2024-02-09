@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng Quay Lì Xì</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            background-image: url('bg.png');
+            /* Đường dẫn tới hình nền */
+            background-size: cover;
+            /* Chỉnh kích thước hình nền */
+            background-position: center;
+            /* Căn giữa hình nền */
+        }
+        
+        button#spin {
+            margin-top: 20px;
+            background-color: #fff;
+            /* Màu trắng cho nút */
+            color: #f00;
+            /* Màu đỏ cho chữ */
+            border: 2px solid #f00;
+            /* Viền đỏ */
+            border-radius: 5px;
+            /* Độ cong viền */
+            padding: 10px 20px;
+            /* Kích thước nút */
+            font-size: 16px;
+            /* Cỡ chữ */
+            cursor: pointer;
+            /* Con trỏ khi di chuột */
+            transition: background-color 0.3s, color 0.3s;
+            /* Hiệu ứng chuyển đổi màu */
+        }
+        
+        button#spin:hover {
+            background-color: #f00;
+            /* Màu đỏ khi di chuột */
+            color: #fff;
+            /* Màu trắng cho chữ khi di chuột */
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <button id="spin">Quay</button>
+
+    <audio id="audio-50" src="50.mp3"></audio>
+    <audio id="audio-100" src="100.mp3"></audio>
+    <audio id="audio-200" src="200.mp3"></audio>
+    <audio id="audio-500" src="500.mp3"></audio>
+    <audio id="audio-lose" src="lose.mp3"></audio>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
